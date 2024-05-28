@@ -1,0 +1,29 @@
+main
+	init
+	check_right
+		right
+			my_delay
+			stop
+		stop
+	check_left
+		left
+			my_delay
+			stop
+		stop
+	check_front_obstacle
+		read_ATD_A0
+		forward
+			my_delay
+			stop
+		stop
+	adjust
+		read_ATD_A0
+		backward
+			my_delay
+			stop
+		stop
+	check_fire
+		read_ATD_A0
+		my_delay
+	my_delay
+interrupt
